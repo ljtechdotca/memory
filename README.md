@@ -1,6 +1,6 @@
 # Memory
 
-This overlay is used for ljtecdotca's Twitch stream.
+Find 8 pairs of matching cards.
 
 ## Screenshots
 
