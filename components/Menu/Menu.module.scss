@@ -1,0 +1,25 @@
+.root {
+  display: grid;
+  margin: 1rem 0 0;
+}
+
+.container {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  &__grey {
+    @extend .button;
+    background-color: var(--accent-3);
+    color: var(--accent-4);
+  }
+  &__purple {
+    @extend .button;
+    background-color: var(--purple-1);
+    color: var(--accent-1);
+  }
+}

@@ -1,0 +1,32 @@
+.root {
+  display: grid;
+}
+
+.container {
+  font-size: 1.625rem;
+  height: 3.375rem;
+  width: 3.375rem;
+  padding: 0.5rem;
+  user-select: none;
+  display: grid;
+  background-color: var(--accent-2);
+  border: 2px solid var(--accent-3);
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.5rem;
+  transition: 0.2s ease border-color;
+  @media (min-width: 768px) {
+    font-size: 3.25rem;
+    height: 6.75rem;
+    width: 6.75rem;
+    padding: 1rem;
+  }
+  &:hover {
+    border-color: var(--purple-1);
+  }
+  &__active {
+    @extend .container;
+    border-color: var(--purple-1);
+    background-color: var(--purple-2);
+  }
+}

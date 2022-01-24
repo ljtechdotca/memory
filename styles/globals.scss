@@ -1,0 +1,33 @@
+:root {
+  --purple-1: #a259ff;
+  --purple-2: #f3e9ff;
+  --accent-1: rgb(255, 255, 255);
+  --accent-2: rgb(250, 250, 250);
+  --accent-3: rgb(240, 240, 240);
+  --accent-4: rgb(100, 100, 100);
+  --accent-5: rgb(50, 50, 50);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--accent-2);
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: unset;
+  font-size: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
