@@ -10,12 +10,16 @@ export const Header = ({}: HeaderProps) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(new Date().getTime());
+      if (game) {
+        if (game.matched < 8) {
+          setTime(new Date().getTime());
+        }
+      }
     });
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [game]);
 
   const currentTime: number = game ? (time - game.start) / 1000 : 0;
 
